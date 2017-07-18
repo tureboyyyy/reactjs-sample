@@ -1,0 +1,14 @@
+.btn_top_right {
+  position: relative;
+  vertical-align: middle;
+  display:inline-block;
+  right:80px;
+  float:right;
+  top: -30px;
+}
+
+.content_title{
+  font-size:20px;
+  font-weight:bold;
+  display:block;
+}
