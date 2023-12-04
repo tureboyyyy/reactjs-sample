@@ -1,9 +1,95 @@
-<mxfile host="app.diagrams.net" modified="2023-12-04T03:59:12.705Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" version="22.1.5" etag="-YvRpwxSmfkbZzEDKqRT" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-04T07:10:57.477Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="iViRHNNWwYFYT7WkEKEH" version="22.1.5" type="github">
   <diagram name="第 1 页" id="J6rX1_gXaeuOIBNm7DQL">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="758" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="2AxaYNsU202TEzl9MDRZ-1" value="前端" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="570" y="190" width="100" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="2AxaYNsU202TEzl9MDRZ-3" value="后端" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="430" y="190" width="100" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="2AxaYNsU202TEzl9MDRZ-4" value="1.访问" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="2AxaYNsU202TEzl9MDRZ-3">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="110" y="260" as="sourcePoint" />
+            <mxPoint x="290" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2AxaYNsU202TEzl9MDRZ-9" value="授权服务器" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="700" y="195" width="100" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="2AxaYNsU202TEzl9MDRZ-12" value="浏览器" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="60" y="190" width="100" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="2AxaYNsU202TEzl9MDRZ-13" value="1.1 重定向到授权服务器,和重定向参数（redirect_uri、client_id、scope）" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.0257" y="-10" relative="1" as="geometry">
+            <mxPoint x="479.5" y="306" as="sourcePoint" />
+            <mxPoint x="110" y="306" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2AxaYNsU202TEzl9MDRZ-14" value="2.访问授权服务器地址，传入重定向参数" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="2AxaYNsU202TEzl9MDRZ-9">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="110" y="350" as="sourcePoint" />
+            <mxPoint x="190" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2AxaYNsU202TEzl9MDRZ-15" value="" style="html=1;verticalAlign=bottom;endArrow=open;endSize=8;curved=0;rounded=0;" edge="1" parent="1" source="2AxaYNsU202TEzl9MDRZ-9">
+          <mxGeometry x="0.0361" y="-10" relative="1" as="geometry">
+            <mxPoint x="190" y="390" as="sourcePoint" />
+            <mxPoint x="110" y="390" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2AxaYNsU202TEzl9MDRZ-16" value="2.1.1 校验后，返回授权页面" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2AxaYNsU202TEzl9MDRZ-15">
+          <mxGeometry x="0.1177" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2AxaYNsU202TEzl9MDRZ-17" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" target="2AxaYNsU202TEzl9MDRZ-9">
+          <mxGeometry x="-0.1103" y="14" relative="1" as="geometry">
+            <mxPoint x="110" y="424" as="sourcePoint" />
+            <mxPoint x="649.5" y="424" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2AxaYNsU202TEzl9MDRZ-18" value="2.1.2 用户点击同意，返回授权结果" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2AxaYNsU202TEzl9MDRZ-17">
+          <mxGeometry x="-0.0992" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2AxaYNsU202TEzl9MDRZ-19" value="2.2 返回重定向：redirect_uri，及分配code" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" source="2AxaYNsU202TEzl9MDRZ-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="460" as="sourcePoint" />
+            <mxPoint x="110" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2AxaYNsU202TEzl9MDRZ-20" value="3.重定向访问redirect_uri，及code" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="2AxaYNsU202TEzl9MDRZ-3">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="110" y="500" as="sourcePoint" />
+            <mxPoint x="190" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2AxaYNsU202TEzl9MDRZ-21" value="3.1 获取token" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="2AxaYNsU202TEzl9MDRZ-9">
+          <mxGeometry x="0.0019" width="80" relative="1" as="geometry">
+            <mxPoint x="480" y="520" as="sourcePoint" />
+            <mxPoint x="560" y="520" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2AxaYNsU202TEzl9MDRZ-22" value="3.2 返回前端url&amp;nbsp;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" source="2AxaYNsU202TEzl9MDRZ-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="560" as="sourcePoint" />
+            <mxPoint x="110" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2AxaYNsU202TEzl9MDRZ-23" value="4.渲染前端" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="2AxaYNsU202TEzl9MDRZ-1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="110" y="600" as="sourcePoint" />
+            <mxPoint x="190" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
